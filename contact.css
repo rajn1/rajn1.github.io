@@ -1,0 +1,45 @@
+﻿body {
+	
+	background-color:black;
+	
+}
+
+div {
+
+
+margin-top: 50px;
+margin-left: 80px;
+margin-right: 50px;
+	
+}
+
+.bright {
+	
+	color: yellow;
+	
+}
+
+h1 {
+	
+	color: black;
+	font-family: "Caviar Dreams";
+	padding-top: 50px;
+	padding-left: 450px;
+	padding-right: 50px;	
+}
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+  font-weight:bold;
+
+}
+
+.nav li {
+  display: inline;
+}
+
+

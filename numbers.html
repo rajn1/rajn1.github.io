@@ -1,0 +1,134 @@
+﻿<html>
+
+<head>
+
+<title>The Number Game</title>
+
+
+</head>
+
+<style>
+
+h1 {
+
+	font-family: "century gothic";
+	font-size: 80px;
+	margin-bottom: 10px;
+	padding-top: 30px;
+	height: 100px;
+}
+
+h2,h3,h5,li   {
+	
+	font-family: "century gothic";
+	
+}
+
+
+body {
+	
+	background: url("https://goo.gl/4KL6tZ");
+}
+
+ol {
+	margin-left: 100px;
+	margin-right: 1100px;
+	background-color:black;
+	color: white;
+}
+
+#hit, #done, #reset, #hard {
+
+	font-family: "century gothic";
+	text-decoration: overline underline;
+	color:#00FFFF;
+	display:inline;
+	margin-left: 50px;
+	margin-top: 10px;
+
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+::selection {
+  background: yellow; /* WebKit/Blink Browsers */
+}
+
+
+
+.nav {
+position:fixed;
+}
+
+.nav a {
+  color: rgb(255,255,255);
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+  text-decoration:none;
+
+}
+
+.expand:hover, .fx:hover {
+	text-decoration:underline;
+}
+.nav li {
+  display: inline;
+
+}
+
+
+
+</style>
+
+<body>
+
+<div class="nav">
+<ul>
+<li class="expand"><a href="resume"> Home </a></li>
+<li><a href="forum"> What do you think? </a> </li>
+<li class="fx"><a href="#">No FX</a></li>
+</ul>
+</div>
+
+
+<h1> Welcome to the Number Game!</h1>
+
+<h3 id="countdown"> </h3>
+<h2 id="hit" class="btn, noselect"> Hit me</h2>
+<h2 id="done" class="btn, noselect"> I'm Done!</h2>
+<h2 id="hard" class="btn, noselect"> Hard Mode D:</h2>
+<h2 id="reset" class="btn, noselect"> Reset and try it again</h2>
+<h2> The Closer you get to 100, the better your score</h2>
+<h3> Regular Mode: Every "hit me" produces a number [0 , 20]</h3>
+<h5><i> Once you hit 81, you could lose </i></h5>
+<h3> Hard Mode: Every "hit me" produces a number [0 , 40]</h3>
+<h5><i> Once you hit 61, you could lose </i></h5>
+
+<p></p>
+<p></p>
+<h2> High Scores:</h2>
+<ol>
+<li id="first"> 1st </li>
+<li id="second"> 2nd </li>
+<li id="third"> 3rd </li>
+
+</ol>
+
+
+	<!-- JQuery Links /* -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+	<script type="text/javascript" src="numbers.js"></script>
+
+</body>
+
+</html>
