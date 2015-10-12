@@ -265,7 +265,7 @@ a:focus {
     padding-top: 100px;
 }
 
-.download-section {
+.hs-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
@@ -276,6 +276,19 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 }
+
+.lse-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background: url(../img/london.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 
 #map {
     width: 100%;
