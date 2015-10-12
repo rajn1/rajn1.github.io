@@ -1,4 +1,4 @@
-/*!
+﻿/*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -34,6 +34,10 @@ p {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
+}
+
+#red {
+	color:red;
 }
 
 @media(min-width:768px) {
