@@ -268,7 +268,7 @@ a:focus {
 .hs-section {
     width: 100%;
     padding: 50px 0;
-    color: orange;
+    color: black;
     background: url(../img/hs.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
