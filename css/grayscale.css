@@ -268,7 +268,7 @@ a:focus {
 .hs-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
+    color: orange;
     background: url(../img/hs.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
@@ -280,7 +280,7 @@ a:focus {
 .lse-section {
     width: 100%;
     padding: 50px 0;
-    color: #fff;
+    color: red;
     background: url(../img/london.jpeg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
