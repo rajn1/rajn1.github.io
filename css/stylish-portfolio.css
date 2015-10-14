@@ -63,6 +63,10 @@ hr.small {
     max-width: 100px;
 }
 
+.red{	
+	color:red;
+}
+
 /* Side Menu */
 
 #sidebar-wrapper {
