@@ -83,24 +83,32 @@
     </header>
 
     <!-- CPEP Section -->
-    <section id="about" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
-                <h1 class="red">Connecticut Pre-Engineering Program</h1>
+    <section id="about" class="content-section text-center">
+        <div class="cpep-section">
+            <div class="container">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h1 class="red size40">Connecticut Pre-Engineering Program</h1>
 
-                <h4 class="red">Summer 2015: Rube Goldberg Kit Production</h4>
+                    <h4 class="red summer15">Summer 2015: Rube Goldberg Kit Production</h4>
 
-                <p></p>
-                <p>Created prototype Rube Goldberg kits from scratch for local middle schools</p>
-                <p>Supervised student teams to choose new unique kit pieces, reducing final price by 18%</p>
-                <p>Designed included rubric (guidebook) used with the final release kit</p>
+                    <div class="summer15-show">
+                        <p></p>
+                        <p class="black">Created prototype Rube Goldberg kits from scratch for local middle schools</p>
+                        <p class="black">Supervised student teams to choose new unique kit pieces, reducing final price by 18%</p>
+                        <p class="black">Designed included rubric (guidebook) used with the final release kit</p>
+                    </div>
 
-                <h4 class="red">Summer 2014</h4>
-                <p>Developed mobile application using MIT App Inventor and Java for Boehringer Ingelheim</p>
-                <p>Constructed team website to represent team publically using HTML</p>
-                <p>Created geolocation algorithms to form radius around app user</p>
-                <p>Fostered teamwork with coworkers to create technical presentation for local investors</p>
 
+                    <h4 class="red summer14">Summer 2014: App Development</h4>
+
+                    <div class="summer14-show">
+                        <p class="black">Developed mobile application using MIT App Inventor and Java for Boehringer Ingelheim</p>
+                        <p class="black">Constructed team website to represent team publically using HTML</p>
+                        <p class="black">Created geolocation algorithms to form radius around app user</p>
+                        <p class="black">Fostered teamwork with coworkers to create technical presentation for local investors</p>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
@@ -110,11 +118,13 @@
         <div id="boston" class="boston-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h1 class="red">D'amore Kim Entrepreneurship Research</h1>
+                    <h1 class="red research16">D'amore Kim Entrepreneurship Research</h1>
 
-                    <p>Parse database data to clean it up for use in research</p>
-                    <p>Work extensively with Microsoft Excel to analyse and present data</p>
-                    <p>Use various Excel formulas to efficiently organize and visualize information</p>
+                    <div class="research16-show">
+                        <p>Parse database data to clean it up for use in research</p>
+                        <p>Work extensively with Microsoft Excel to analyse and present data</p>
+                        <p>Use various Excel formulas to efficiently organize and visualize information</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,11 +137,14 @@
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2">
 
-                    <h1 class="red">High School Service Project</h1>
+                    <h1 class="red service15">High School Service Project</h1>
 
-                    <p>Co-lead a service project to raise money and food goods for local homeless shelter</p>
-                    <p>Developed an intra-grade competition for 9th grade teams to increase project interest</p>
-                    <p>Collected over 360 food goods and $950, all of which was donated to the homeless shelter</p>
+                    <div class="service15-show">
+                        <p>Co-lead a service project to raise money and food goods for local homeless shelter</p>
+                        <p>Developed an intra-grade competition for 9th grade teams to increase project interest</p>
+                        <p>Collected over 360 food goods and $950, all of which was donated to the homeless shelter</p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -178,19 +191,41 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
 
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
 
+    <!-- Personal JS -->
     <script>
         // Brings in info on hover
-        $(".summer").mouseover(function () {
+        $(document).ready(function () {
+            $(".summer15").hover(function () {
+                    $(".summer15-show").slideDown();
+                },
+                function () {
+                    $(".summer15-show").slideUp();
+                });
 
-            $('.hide').animate({
-                display: 'inline'
-            });
+            $(".summer14").hover(function () {
+                    $(".summer14-show").slideDown();
+                },
+                function () {
+                    $(".summer14-show").slideUp();
+                });
+
+            $(".research16").hover(function () {
+                    $(".research16-show").slideDown();
+                },
+                function () {
+                    $(".research16-show").slideUp();
+                });
+
+            $(".service15").hover(function () {
+                    $(".service15-show").slideDown();
+                },
+                function () {
+                    $(".service15-show").slideUp();
+                });
+
         });
     </script>
 

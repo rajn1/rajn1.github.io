@@ -110,10 +110,10 @@
                                 <i class="fa fa-circle fa-stack-2x fa-orange"></i>
                                 <a href="http://www.rsa.neu.edu/hall-councils/structure/"><i class="fa fa-globe fa-stack-1x text-primary"></i></a>
                             </span>
-                                <h4>
+                                <h4 class="evPres">
                                     <strong>East Village President</strong>
                                 </h4>
-                                <p>In charge of coordinating with fellow council members to improve living environment and host building events for all 760 building residents</p>
+                                <p class="evPres-show">In charge of coordinating with fellow council members to improve living environment and host building events for all 760 building residents</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -127,22 +127,22 @@
                                 <i class="fa fa-paw fa-stack-1x text-primary"></i></a>
 
                             </span>
-                                <h4>
+                                <h4 class="huskyAmbassador">
                                     <strong>Husky Ambassador</strong>
                                 </h4>
-                                <p>Official Northeastern Tour guide, responsible for knowing workings of campus and clearly explaining them to visiting parents and students</p>
+                                <p class="huskyAmbassador-show">Official Northeastern Tour guide, responsible for knowing workings of campus and clearly explaining them to visiting parents and students</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x fa-yellow"></i>
+                                <i class="fa fa-circle fa-stack-2x fa-yellow KCVP"></i>
                                 <i class="fa fa-share-alt fa-stack-1x text-primary"></i>
                             </span>
-                                <h4>
+                                <h4 class="KCVP">
                                     <strong>Key Club Vice President</strong>
                                 </h4>
-                                <p>Organized a school-wide fundraising competition for the local food shelter. Raised over 350 food items and $130.</p>
+                                <p class="KCVP-show">Organized a school-wide fundraising competition for the local food shelter. Raised over 350 food items and $130.</p>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
@@ -151,10 +151,10 @@
                                 <i class="fa fa-circle fa-stack-2x fa-green"></i>
                                 <i class="fa fa-users fa-stack-1x text-primary"></i>
                             </span>
-                                <h4>
+                                <h4 class="CSMentor">
                                     <strong>New Student Mentor</strong>
                                 </h4>
-                                <p>Mentored new Computer Science students over the summer to prepare them for their first year of college.</p>
+                                <p class="CSMentor-show">Mentored new Computer Science students over the summer to prepare them for their first year of college.</p>
                             </div>
                         </div>
                     </div>
@@ -262,7 +262,6 @@
 
     <!-- Personal JavaScript -->
     <script>
-
         // Allows unseen elements to fade in once scrolled to
         $(window).scroll(function () {
 
@@ -282,6 +281,34 @@
                 }
             });
         });
+
+        $(".evPres").hover(function () {
+                $(".evPres-show").slideDown();
+            },
+            function () {
+                $(".evPres-show").slideUp();
+            });
+        
+                $(".huskyAmbassador").hover(function () {
+                $(".huskyAmbassador-show").slideDown();
+            },
+            function () {
+                $(".huskyAmbassador-show").slideUp();
+            });
+        
+                $(".KCVP").hover(function () {
+                $(".KCVP-show").slideDown();
+            },
+            function () {
+                $(".KCVP-show").slideUp();
+            });
+        
+                $(".CSMentor").hover(function () {
+                $(".CSMentor-show").slideDown();
+            },
+            function () {
+                $(".CSMentor-show").slideUp();
+            });
     </script>
 
 </body>

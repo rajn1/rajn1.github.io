@@ -17,16 +17,41 @@ body {
     margin: 0
 }
 
+
 /* Custom CSS to hide elements (works with JS) */
 
-.notseen
-{
-    opacity:0;
+.notseen {
+    opacity: 0;
 }
 
-.hide
-{
+.summer15-show,
+.summer14-show,
+.research16-show,
+.service15-show,
+.evPres-show,
+.huskyAmbassador-show,
+.KCVP-show,
+.CSMentor-show {
     display: none;
+}
+
+.summer15,
+.summer14,
+.research16,
+.service-15,
+.evPres,
+.huskyAmbassador,
+.KCVP,
+.CSMentor {
+    font-size: 30px;
+}
+
+.size40 {
+    font-size: 40px;
+}
+
+.black {
+    color: black
 }
 
 
