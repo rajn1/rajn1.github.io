@@ -30,7 +30,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-   
+
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -98,7 +98,7 @@
     <!-- Services -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="services" class="services bg-primary">
-        <div class="container">
+        <div class="container notseen">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2 class="red">Activities</h2>
@@ -287,6 +287,26 @@
                         }, 1000);
                         return false;
                     }
+                }
+            });
+        });
+
+        // Allows unseen elements to fade in once scrolled to
+        $(window).scroll(function () {
+
+            /* Check the location of each desired element */
+            $('.notseen').each(function (i) {
+
+                var obj_middle = $(this).position().top + $(this).outerHeight();
+                var window_bottom = $(window).scrollTop() + $(window).height();
+                var curOpacity = 0;
+
+                if (window_bottom > obj_middle) {
+
+                    $(this).animate({
+                        'opacity': '1'
+                    }, 1500);
+
                 }
             });
         });

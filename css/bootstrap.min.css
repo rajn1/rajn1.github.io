@@ -17,6 +17,11 @@ body {
     margin: 0
 }
 
+.notseen
+{
+    opacity:0;
+}
+
 article,
 aside,
 details,
