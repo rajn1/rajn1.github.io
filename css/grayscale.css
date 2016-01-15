@@ -1,4 +1,4 @@
-﻿/*!
+/*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
@@ -405,4 +405,14 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+.blue {
+    color:blue;
+    font-size: 18px;
+}
+
+.green {
+    color:greenyellow;
+    font-size: 18px;
 }
