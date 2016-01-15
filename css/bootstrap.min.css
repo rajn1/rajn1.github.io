@@ -17,10 +17,20 @@ body {
     margin: 0
 }
 
+/* Custom CSS to hide elements (works with JS) */
+
 .notseen
 {
     opacity:0;
 }
+
+.hide
+{
+    display: none;
+}
+
+
+/* Bootstrap CSS */
 
 article,
 aside,
