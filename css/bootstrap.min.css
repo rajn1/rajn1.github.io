@@ -7882,3 +7882,6 @@ button.close {
         display: none!important
     }
 }
+.query {
+    font-size: 20px;
+}
