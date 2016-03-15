@@ -410,11 +410,13 @@ body {
 .blue {
     color:blue;
     font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .green {
     color:greenyellow;
     font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .cpep-section {
