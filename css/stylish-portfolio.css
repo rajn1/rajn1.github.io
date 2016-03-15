@@ -69,7 +69,12 @@ hr.small {
     font-size: 50px;
 }
 
+
 /* Nav Bar */
+
+.red-nav{
+    color:red;
+}
 
 .navbar-custom {
     margin-bottom: 0;
