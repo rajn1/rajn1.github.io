@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c78ca64-f729-4f56-9b5c-aacbb6b9979c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/stylish-portfolio.css" afterPath="$PROJECT_DIR$/css/stylish-portfolio.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nu.html" afterPath="$PROJECT_DIR$/nu.html" />
     </list>
     <ignored path="rajn1.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3224138">
-              <caret line="60" column="79" selection-start-line="60" selection-start-column="79" selection-end-line="60" selection-end-column="79" />
+            <state vertical-scroll-proportion="-7.8461537">
+              <caret line="251" column="42" selection-start-line="251" selection-start-column="42" selection-end-line="251" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -55,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nu.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nu.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nu.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.1538463">
-              <caret line="162" column="50" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.35517243">
+              <caret line="186" column="15" selection-start-line="186" selection-start-column="15" selection-end-line="186" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -83,10 +82,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/nu.html" />
         <option value="$PROJECT_DIR$/css/grayscale.css" />
         <option value="$PROJECT_DIR$/css/stylish-portfolio.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/nu.html" />
       </list>
     </option>
   </component>
@@ -264,14 +263,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1538463">
-          <caret line="162" column="50" selection-start-line="162" selection-start-column="50" selection-end-line="162" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.769231">
@@ -290,8 +281,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3224138">
-          <caret line="60" column="79" selection-start-line="60" selection-start-column="79" selection-end-line="60" selection-end-column="79" />
+        <state vertical-scroll-proportion="-7.8461537">
+          <caret line="251" column="42" selection-start-line="251" selection-start-column="42" selection-end-line="251" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35517243">
+          <caret line="186" column="15" selection-start-line="186" selection-start-column="15" selection-end-line="186" selection-end-column="15" />
           <folding />
         </state>
       </provider>
