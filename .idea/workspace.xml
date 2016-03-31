@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c78ca64-f729-4f56-9b5c-aacbb6b9979c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/agency.css" afterPath="$PROJECT_DIR$/css/agency.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="rajn1.github.io.iws" />
@@ -30,8 +27,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.062068965">
-              <caret line="533" column="40" selection-start-line="533" selection-start-column="40" selection-end-line="533" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.6448276">
+              <caret line="313" column="24" selection-start-line="313" selection-start-column="24" selection-end-line="313" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="agency.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/agency.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="147.76923">
+              <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -60,8 +67,8 @@
       <file leaf-file-name="stylish-portfolio.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/stylish-portfolio.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-111.80769">
-              <caret line="213" column="1" selection-start-line="213" selection-start-column="1" selection-end-line="213" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.5769231">
+              <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,6 +105,7 @@
         <option value="$PROJECT_DIR$/css/grayscale.css" />
         <option value="$PROJECT_DIR$/css/stylish-portfolio.css" />
         <option value="$PROJECT_DIR$/nu.html" />
+        <option value="$PROJECT_DIR$/css/agency.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -332,14 +340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/stylish-portfolio.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-111.80769">
-          <caret line="213" column="1" selection-start-line="213" selection-start-column="1" selection-end-line="213" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/agency.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.115385">
@@ -348,10 +348,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/agency.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="147.76923">
+          <caret line="64" column="25" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/stylish-portfolio.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5769231">
+          <caret line="192" column="0" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.062068965">
-          <caret line="533" column="40" selection-start-line="533" selection-start-column="40" selection-end-line="533" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.6448276">
+          <caret line="313" column="24" selection-start-line="313" selection-start-column="24" selection-end-line="313" selection-end-column="24" />
           <folding />
         </state>
       </provider>
