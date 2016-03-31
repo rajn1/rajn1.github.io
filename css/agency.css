@@ -3,6 +3,10 @@ body {
     font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
+.black {
+    color: black;
+}
+
 .text-muted {
     color: #777
 }
@@ -33,9 +37,9 @@ a:hover, a:focus, a:active, a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-weight: 700
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .img-centered {
