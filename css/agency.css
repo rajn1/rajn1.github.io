@@ -37,8 +37,8 @@ a:hover, a:focus, a:active, a.active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-    font-weight: 700
+
+    font-weight: 700;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -201,18 +201,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-header {
-    background-image: url(../img/header-bg.jpg);
-    background-repeat: none;
-    background-attachment: scroll;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    text-align: center;
-    color: #fff
-}
+
 
 header .intro-text {
     padding-top: 100px;

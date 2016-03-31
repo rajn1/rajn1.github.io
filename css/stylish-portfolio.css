@@ -260,6 +260,11 @@ footer {
 
 .evPres, .huskyAmbassador, .KCVP, .CSMentor {
     font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.evPres-show , .huskyAmbassador-show, .KCVP-show, .CSMentor-show{
+    display: none;
 }
 
 
