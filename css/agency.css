@@ -256,7 +256,8 @@ section {
 section h2.section-heading {
     font-size: 40px;
     margin-top: 0;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    color: red;
 }
 
 section h3.section-subheading {
@@ -281,7 +282,7 @@ section h3.section-subheading {
 
 #portfolio .portfolio-item {
     margin: 0 0 15px;
-    right: 0
+    right: 0;
 }
 
 #portfolio .portfolio-item .portfolio-link {
