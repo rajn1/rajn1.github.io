@@ -48,6 +48,17 @@ p {
 	color:white;
 }
 
+.summer15-show,
+.summer14-show,
+.research16-show,
+.service15-show,
+.evPres-show,
+.huskyAmbassador-show,
+.KCVP-show,
+.CSMentor-show {
+    display: none;
+}
+
 
 @media(min-width:768px) {
     p {
