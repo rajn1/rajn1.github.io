@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c78ca64-f729-4f56-9b5c-aacbb6b9979c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/grayscale.css" afterPath="$PROJECT_DIR$/css/grayscale.css" />
-    </list>
+    <list default="true" id="5c78ca64-f729-4f56-9b5c-aacbb6b9979c" name="Default" comment="" />
     <ignored path="rajn1.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
