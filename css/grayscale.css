@@ -428,6 +428,10 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.size30 {
+    font-size: 30px;
+}
+
 .green {
     color:greenyellow;
     font-size: 18px;
