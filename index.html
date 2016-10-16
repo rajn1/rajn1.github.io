@@ -468,59 +468,6 @@
     <script src="js/front.js"></script>
     <script src="js/owl.carousel.min.js"></script>
 
-
-
-    <!-- Personal JavaScript -->
-    <script>
-        // Allows unseen elements to fade in once scrolled to
-        $(window).scroll(function () {
-
-            /* Check the location of each desired element */
-            $('.notseen').each(function (i) {
-
-                var obj_middle = $(this).position().top + $(this).outerHeight();
-                var window_bottom = $(window).scrollTop() + $(window).height();
-                var curOpacity = 0;
-
-                if (window_bottom > obj_middle) {
-
-                    $(this).animate({
-                        'opacity': '1'
-                    }, 1500);
-
-                }
-            });
-        });
-
-        $(".evPres").hover(function () {
-                $(".evPres-show").slideDown();
-            },
-            function () {
-                $(".evPres-show").slideUp();
-            });
-
-        $(".huskyAmbassador").hover(function () {
-                $(".huskyAmbassador-show").slideDown();
-            },
-            function () {
-                $(".huskyAmbassador-show").slideUp();
-            });
-
-        $(".KCVP").hover(function () {
-                $(".KCVP-show").slideDown();
-            },
-            function () {
-                $(".KCVP-show").slideUp();
-            });
-
-        $(".CSMentor").hover(function () {
-                $(".CSMentor-show").slideDown();
-            },
-            function () {
-                $(".CSMentor-show").slideUp();
-            });
-    </script>
-
 </body>
 
 </html>

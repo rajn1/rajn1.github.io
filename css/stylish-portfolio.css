@@ -214,6 +214,10 @@ hr.small {
     margin-bottom: 30px;
 }
 
+.reference-description img {
+    max-height: 300px;
+}
+
 /* Callout */
 
 .callout {
