@@ -36,6 +36,18 @@
 	border-color: #00a8ff;
 }
 
+.service-orange:hover {
+    border-color: darkorange;
+}
+
+.service-red:hover {
+    border-color: red;
+}
+
+.service-green:hover {
+    border-color: lawngreen;
+}
+
 .service:hover .icon-holder {
 	top: -30px;
 }
