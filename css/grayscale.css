@@ -55,6 +55,7 @@ p {
 .evPres-show,
 .huskyAmbassador-show,
 .KCVP-show,
+.ssga-show,
 .CSMentor-show {
     display: none;
 }
@@ -441,6 +442,12 @@ body {
 .cpep-section {
     background: url(../img/CT1.jpg) no-repeat center center scroll;
 }
+
+.ssga-section {
+    background: url(../img/State_Street.jpg) no-repeat center center scroll;
+    
+}
+
 
 .intro-nu {
     

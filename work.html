@@ -102,16 +102,17 @@
 
     <!-- State Street Section -->
     <section  class="content-section text-center">
-        <div id="ssga" class="cpep-section">
+        <div id="ssga" class="ssga-section">
             <div class="container">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h1 class="red size40">State Street Global Advisors R&amp;D Co-op</h1>                    
-                    <div class="blue">
+                    <h1 class="red size40 ssga">State Street Global Advisors R&amp;D Co-op</h1>                    
+                    <div class="blue ssga-show">
                         <p>Lead project to redesign internal interns page; increase page views 50%</p>
                         <p>Develop front end for new internal task tracker used by managers and employees throughout department using python, flask, HTML, CSS, and Javascript</p>
                         <p>Work with Microsoft Sharepoint, JavaScript, and JSON data to develop business-side database repository</p>
                         <p>Create data visualizations using Tableau Desktop 9.2</p>
                     </div>
+                    <h6 class="blue">Scroll over to learn more!</h6>
                 </div>
             </div>
         </div>
@@ -247,6 +248,14 @@
                 },
                 function () {
                     $(".summer15-show").slideUp();
+                });
+            
+            $(".ssga").hover(function () {
+                    $(".ssga-show").slideDown();
+                    $("h6").hide();
+                },
+                function () {
+                    $(".ssga-show").slideUp();
                 });
 
             $(".summer14").hover(function () {
