@@ -290,6 +290,18 @@ a:focus {
     -o-background-size: cover;
 }
 
+.nu-section {
+    width: 100%;
+    padding: 50px 0;
+    color: black;
+    background: url(../img/neu.jpg) no-repeat center center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 .lse-section {
     width: 100%;
     padding: 50px 0;
@@ -421,9 +433,10 @@ body {
 }
 
 .green {
-    color: greenyellow;
-    font-size: 18px;
-    font-family: 'Roboto Condensed', sans-serif;
+    color: green;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif, bold;
+    
 }
 
 .cpep-section {
