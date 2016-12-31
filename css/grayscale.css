@@ -48,17 +48,6 @@ p {
     color: white;
 }
 
-.summer15-show,
-.summer14-show,
-.research16-show,
-.service15-show,
-.evPres-show,
-.huskyAmbassador-show,
-.KCVP-show,
-.ssga-show,
-.CSMentor-show {
-    display: none;
-}
 
 @media(min-width:768px) {
     p {
@@ -445,10 +434,20 @@ body {
 
 .cpep-section {
     background: url(../img/CT1.jpg) no-repeat center center scroll;
+    background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat
 }
 
 .ssga-section {
     background: url(../img/State_Street.jpg) no-repeat center center scroll;
+    background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat
 }
 
 #nu {
