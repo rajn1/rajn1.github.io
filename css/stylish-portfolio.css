@@ -4,6 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
 /* Global Styles */
 
 html,
@@ -13,7 +14,7 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .text-vertical-center {
@@ -29,33 +30,35 @@ body {
     font-weight: 700;
 }
 
+
 /* Custom Button Styles */
 
 .btn-dark {
     border-radius: 0;
     color: #fff;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .btn-dark:hover,
 .btn-dark:focus,
 .btn-dark:active {
     color: #fff;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-light {
     border-radius: 0;
     color: #333;
-    background-color: rgb(255,255,255);
+    background-color: rgb(255, 255, 255);
 }
 
 .btn-light:hover,
 .btn-light:focus,
 .btn-light:active {
     color: #333;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
+
 
 /* Custom Horizontal Rule */
 
@@ -63,24 +66,24 @@ hr.small {
     max-width: 100px;
 }
 
-.red{	
-	color:red;
-    font-family: 'Quicksand', sans-serif;
+.red {
+    color: red;
+    font-family: 'Raleway', sans-serif;
     font-size: 50px;
 }
 
 
 /* Nav Bar */
 
-.red-nav{
-    color:red;
+.red-nav {
+    color: red;
 }
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid rgba(255,255,255,.3);
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
     text-transform: uppercase;
-    font-family: "Titillium Web", sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #000;
 }
 
@@ -115,7 +118,7 @@ hr.small {
 
 .navbar-custom .nav li a:hover {
     outline: 0;
-    color: rgba(255,255,255,.8);
+    color: rgba(255, 255, 255, .8);
     background-color: transparent;
 }
 
@@ -130,7 +133,7 @@ hr.small {
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(255, 255, 255, .3);
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -143,17 +146,17 @@ hr.small {
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
-
     .navbar-custom.top-nav-collapse {
         padding: 0;
-        border-bottom: 1px solid rgba(255,255,255,.3);
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
         background: #000;
     }
 }
+
 
 /* Header */
 
@@ -172,6 +175,7 @@ hr.small {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 /* Services */
 
@@ -205,7 +209,7 @@ hr.small {
     font-size: 48px;
 }
 
-.services h2{
+.services h2 {
     margin-top: 140px;
     font-size: 48px;
 }
@@ -217,6 +221,7 @@ hr.small {
 .reference-description img {
     max-height: 300px;
 }
+
 
 /* Callout */
 
@@ -234,6 +239,7 @@ hr.small {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 
 /* Portfolio */
 
@@ -253,6 +259,7 @@ hr.small {
     opacity: 0.8;
 }
 
+
 /* Call to Action */
 
 .call-to-action {
@@ -262,6 +269,7 @@ hr.small {
 .call-to-action .btn {
     margin: 10px;
 }
+
 
 /* Map */
 
@@ -275,6 +283,7 @@ hr.small {
     }
 }
 
+
 /* Footer */
 
 footer {
@@ -282,35 +291,38 @@ footer {
 }
 
 #XL {
-	font-size: 100px;
+    font-size: 100px;
 }
+
 .XL {
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
-.evPres, .huskyAmbassador, .KCVP, .CSMentor {
-    font-family: 'Open Sans Condensed', sans-serif;
-
+.evPres,
+.huskyAmbassador,
+.KCVP,
+.CSMentor {
+    font-family: 'Raleway', sans-serif;
 }
 
-.evPres-show , .huskyAmbassador-show, .KCVP-show, .CSMentor-show{
+.evPres-show,
+.huskyAmbassador-show,
+.KCVP-show,
+.CSMentor-show {
     display: none;
 }
 
-
-
 .quicksand {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
 }
 
 .workTitle {
-        font-family: 'Quicksand', sans-serif;
-        color: aqua;
+    font-family: 'Raleway', sans-serif;
+    color: aqua;
 }
 
 .quicksand-small {
-        font-family: 'Quicksand', sans-serif;
-        font-size: 20px;
-    
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
 }
