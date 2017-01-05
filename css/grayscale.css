@@ -48,7 +48,6 @@ p {
     color: white;
 }
 
-
 @media(min-width:768px) {
     p {
         margin: 0 0 35px;
@@ -430,7 +429,6 @@ body {
     color: green;
     font-size: 20px;
     font-family: 'Roboto Condensed', sans-serif, bold;
-    
 }
 
 .cpep-section {
