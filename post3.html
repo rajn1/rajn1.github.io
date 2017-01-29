@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Week 3 Post</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i> </button> <a class="navbar-brand" href="ds4100.html">Home</a> </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/post2-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Week 3  : DS4100</h1>
+                        <h2 class="subheading">Cleaning external Data</h2> <span class="meta">Posted on January 29th, 2017</span> </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>This week in class we spent some time discussing how to import external data, be it in JSON or CSV form, and how engaging in that process would require data scientists
+                        to also clean up the data, and ensure that it wasn't filled with Null values, incorrectly formatted information, and bad data. This was very relevant to me, as over
+                        co-op I became quite well accustomed to the life of working with data and spending most of my time trying to figure out why data was incorrect or how to clean it correctly so it
+                        wouldn't be.</p>
+                    <p>My strongest example comes from an employee packet that the firm I worked for internally published to show new co-ops who their counterparts throughout the firm were.
+                    The company hired many, many co-ops, and so this was a useful resource to find others that worked there and see if already had any connections with the other co-ops working at the time.
+                    My job was to take that packet, published internally as a pdf, and convert it into a nice visual webpage for co-ops to use. The large nature of the file meant that I couldn't
+                    do this work manually, and would thus need to have a function that could create HTML dynamically for me using the information in the pdf. Sounds simple enough, but the work
+                    was anything but.</p>
+                    <p>The reason for my difficulties stemmed from the fact that when I first used programs to convert certain parts of the pdf to a usable JSON file, there was a ton of 
+                    false or mislabeled data. Basically, the pdf would be converted to the more code-friendly JSON, but there were so many unnessesary uses of code, and so many irrelevant parts
+                    of the page converted too, that I had to take a closer look at the data. I realized the way it was formatted made <a href="https://github.com/modesty/pdf2json">different parsers</a>
+                    consider many irrelevant parts of the document as important, which really messed with the accuracy of the data being produced.</p>
+                    <p>To resolve that issue, I realized I needed to manually go through the pdf and strip it down to its most basic, unformatted form, so that it was essentially just text-data.
+                    This was not exactly ideal, but it did make my job much easier and more manageable. In the end, I realized that, while not the most exciting activity, cleaning data was a vital 
+                    part of doing data analysis, and without doing it well one can not accurately claim to have analysed their data at all.</p>
+                    <p><a href="https://www.yahoo.com/tech/hero-big-data-needs-data-201938805.html">(Atleast until software can do it all for us :) )</a></p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <hr>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+</body>
+
+</html>
