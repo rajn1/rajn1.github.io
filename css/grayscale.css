@@ -417,8 +417,6 @@ body {
 
 .blue {
     color: blue;
-    font-size: 18px;
-    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .size30 {
@@ -427,8 +425,6 @@ body {
 
 .green {
     color: green;
-    font-size: 20px;
-    font-family: 'Roboto Condensed', sans-serif, bold;
 }
 
 .cpep-section {
