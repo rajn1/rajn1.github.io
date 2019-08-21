@@ -463,6 +463,16 @@ body {
     background-repeat: no-repeat
 }
 
+
+.bms-section {
+    background: url(../img/bms.jpg) no-repeat center center scroll;
+    background-size: cover;
+    -o-background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
 #nu {
     font-family: 'Roboto Condensed', sans-serif;
 }
