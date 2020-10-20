@@ -326,3 +326,9 @@ footer {
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
 }
+
+.quicksand-small a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    color: forestgreen;
+}
