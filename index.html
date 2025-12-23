@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio and resume for Raj Narayan, a Palantir deployment strategist, featuring activities, projects, experience, and contact details.">
-    <meta name="author" content="">
     <title>Raj Narayan</title>
     <!-- Page Tab Icon -->
     <link rel="shortcut icon" href="img/pencil.ico">
@@ -15,14 +14,10 @@
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
     <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="css/cardio.css">
     <link href="css/it.css" rel="stylesheet" id="theme-stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <!-- This Site uses flaticons! -->
-    <!-- This site uses flaticons by Madebyoliver -->
     <!-- Google Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -40,392 +35,713 @@
     </script>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
-                <a class="navbar-brand page-scroll" href="index"> <i class="fa fa-play-circle"></i> <span class="light ">Raj Narayan</span> </a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li> <a class="page-scroll" href="#about">About</a> </li>
-                    <li> <a class="page-scroll" href="#services">Activities</a> </li>
-                    <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
-                    <li> <a class="page-scroll" href="#workAndExperience">Experience</a> </li>
-                    <li> <a class="page-scroll" href="#contact">Contact Me</a> </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+<body id="page-top">
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
+            <h3 class="black">Hi I'm</h3>
             <h1 class="XL black">Raj Narayan</h1>
-            <h3 class="XL black">Automotive Lead @ Palantir</h3>
-            <h3 class="XL black">[Website Built in 2015: Updates Pending]</h3>
+            <h3 class="M black">Automotive Lead @ Palantir</h3>
             <br>
-<!--            <a href="#about"> <i class="fa fa-chevron-circle-down fa-4x fa-red"></i></a> -->
         </div>
     </header>
-    <!-- About -->
-    <section id="about" class="about">
+    <section class="hero-cta">
+        <div class="container text-center">
+            <p class="hero-cta__intro">Explore my background</p>
+            <div class="hero-cta__buttons">
+                <a class="btn btn-cta" href="#work">Work</a>
+                <a class="btn btn-cta" href="#education">Education</a>
+                <a class="btn btn-cta" href="#extracurricular">Extracurricular</a>
+            </div>
+        </div>
+    </section>
+    <!-- Work -->
+    <section id="work" class="section section--gray">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Bachelors of Science in Business Administration and Computer Science</h2>
-                    <h4>Northeastern University Class of 2019</h4>
-                    <p>Magna Cum Laude</p>
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h2 class="section-title--xl">Work</h2>
                 </div>
             </div>
-            <!-- /.row -->
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <button type="button" class="info-card service-black" data-toggle="modal" data-target="#modal-palantir">
+                        <div class="icon-holder"> <img src="img/pltr.png" alt="Palantir logo" class="icon icon-wide"> </div>
+                        <h4 class="heading">Palantir</h4>
+                        <p class="info-card__role">Deployment Lead - Automotive</p>
+                        <p class="info-card__years">2021-</p>
+                        <p class="info-card__summary">Lead for Automotive Team in United States. Owned outreach and deployment success for multiple F100 companies in space.</p>
+                        <span class="info-card__cta">View Details</span>
+                    </button>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <button type="button" class="info-card service-purple" data-toggle="modal" data-target="#modal-allvue">
+                        <div class="icon-holder"> <img src="img/allvue.jpg" alt="Allvue logo" class="icon icon-wide"> </div>
+                        <h4 class="heading">Allvue Systems</h4>
+                        <p class="info-card__role">Senior Product Specialist</p>
+                        <p class="info-card__years">2019-2021</p>
+                        <p class="info-card__summary">Led implementations for seven financial-services clients and built custom credit tooling.</p>
+                        <span class="info-card__cta">View Details</span>
+                    </button>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <button type="button" class="info-card service-goldman" data-toggle="modal" data-target="#modal-gs">
+                        <div class="icon-holder"> <img src="img/goldmansachs.jpeg" alt="Goldman Sachs logo" class="icon icon-wide"> </div>
+                        <h4 class="heading">Goldman Sachs</h4>
+                        <p class="info-card__role">Management &amp; PWM Analyst Co-op</p>
+                        <p class="info-card__years">2017-2018</p>
+                        <p class="info-card__summary">Built Python models, forecast growth, and supported private wealth client work.</p>
+                        <span class="info-card__cta">View Details</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row"></div>
+            <div class="col-sm-6 col-md-4">
+                <button type="button" class="info-card service-orange" data-toggle="modal" data-target="#modal-research">
+                    <div class="icon-holder"> <img src="img/dmsb-logo.png" alt="D'Amore-McKim School of Business logo" class="icon icon-wide"> </div>
+                    <h4 class="heading">D'Amore-McKim School of Business</h4>
+                    <p class="info-card__role">Research Assistant</p>
+                    <p class="info-card__years">2017-2019</p>
+                    <p class="info-card__summary">Cleaned, modeled, and visualized market data for faculty research.</p>
+                    <span class="info-card__cta">View Details</span>
+                </button>
+            </div>
+                <div class="col-sm-6 col-md-4">
+                    <button type="button" class="info-card service-state-street" data-toggle="modal" data-target="#modal-ssga">
+                        <div class="icon-holder"> <img src="img/ssga.png" alt="State Street Global Advisors logo" class="icon icon-wide"> </div>
+                        <h4 class="heading">State Street Global Advisors</h4>
+                        <p class="info-card__role">R&amp;D Analyst Co-op</p>
+                        <p class="info-card__years">2016</p>
+                        <p class="info-card__summary">Modernized internal tools and built data visualizations for global teams.</p>
+                        <span class="info-card__cta">View Details</span>
+                    </button>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <button type="button" class="info-card service-connecticut" data-toggle="modal" data-target="#modal-cpep">
+                        <div class="icon-holder"> <img src="img/ct-flag.png" alt="CT Pre-Engineering Program logo" class="icon icon-wide"> </div>
+                        <h4 class="heading">CT Pre-Engineering Program</h4>
+                        <p class="info-card__role">STEM Program Lead</p>
+                        <p class="info-card__years">2014</p>
+                        <p class="info-card__summary">Designed kits and mentored teams building apps and Rube Goldberg devices.</p>
+                        <span class="info-card__cta">View Details</span>
+                    </button>
+                </div>
+            </div>
         </div>
-        <!-- /.container -->
+    </section>
+    <!-- Education -->
+    <section id="education" class="section section--gray-alt">
+        <div class="container container-wide">
+            <div class="row text-center">
+                <div class="col-lg-12">
+                    <h2 class="section-title--xl">Education</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <button type="button" class="info-card service-northeastern" data-toggle="modal" data-target="#modal-nu">
+                        <div class="icon-holder"> <img src="img/neu-logo.png" alt="Northeastern University logo" class="icon icon-wide"> </div>
+                        <h4 class="heading">Northeastern University</h4>
+                        <p class="info-card__role">BS Business Administration &amp; Computer Science</p>
+                        <p class="info-card__summary">Magna Cum Laude · Class of 2019</p>
+                        <span class="info-card__cta">View Details</span>
+                    </button>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <button type="button" class="info-card service-red" data-toggle="modal" data-target="#modal-lse">
+                        <div class="icon-holder"> <img src="img/lse-logo.png" alt="London School of Economics logo" class="icon icon-wide"> </div>
+                        <h4 class="heading">London School of Economics</h4>
+                        <p class="info-card__role">Summer Course</p>
+                        <p class="info-card__summary">Game Theory &amp; Competitive Strategy · A+ grade</p>
+                        <span class="info-card__cta">View Details</span>
+                    </button>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <button type="button" class="info-card service-dhs" data-toggle="modal" data-target="#modal-dhs">
+                        <div class="icon-holder"> <img src="img/dhs-logo.png" alt="Danbury High School logo" class="icon"> </div>
+                        <h4 class="heading">Danbury High School</h4>
+                        <p class="info-card__role">Class of 2014</p>
+                        <p class="info-card__summary">4.31 GPA</p>
+                        <span class="info-card__cta">View Details</span>
+                    </button>
+                </div>
+            </div>
+            <div class="education-activities">
+                <h3>Education Activities</h3>
+                <div class="activity-grid">
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--orange">
+                            <div class="activity-card__icon"> <img src="img/icons/house-outline.png" alt="House outline icon"> </div>
+                            <h4 class="activity-card__title">Hall Council President</h4>
+                            <p class="activity-card__description">In charge of coordinating with fellow council members to improve living environment and host building events for all residents in both building complexes (2 terms)</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--red">
+                            <div class="activity-card__icon"> <img src="img/icons/people.png" alt="Group of people icon"> </div>
+                            <h4 class="activity-card__title">Husky Ambassador Recruitment Committee</h4>
+                            <p class="activity-card__description">Work with the rest of the team to enage with students and find/interview the best potential new tour guides for Northeastern University</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--aqua">
+                            <div class="activity-card__icon"> <img src="img/icons/statistics.png" alt="Bar chart icon"> </div>
+                            <h4 class="activity-card__title">Big Data Club President</h4>
+                            <p class="activity-card__description">Lead E-Board and coordinate with others in the Northeastern and Boston community to promote the value of Big Data to students throughout all disciplines</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--purple">
+                            <div class="activity-card__icon"> <img src="img/icons/id-card.png" alt="ID card icon"> </div>
+                            <h4 class="activity-card__title">EDGE Summit Attendee</h4>
+                            <p class="activity-card__description">Nominated to be one of 40 students from around US to attend Marketing EDGE Summit, a conference in New York City centered around marketing analytics</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--black">
+                            <div class="activity-card__icon"> <img src="img/icons/checked.png" alt="Checkmark icon"> </div>
+                            <h4 class="activity-card__title">Deans List</h4>
+                            <p class="activity-card__description">Earned GPA high enough to qualify for Dean's list all five semesters at Northeastern</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--neutral">
+                            <div class="activity-card__icon"> <img src="img/icons/key-outline.png" alt="Key outline icon"> </div>
+                            <h4 class="activity-card__title">CCIS Mentor</h4>
+                            <p class="activity-card__description">Mentored new Computer Science students over the summer to prepare them for their first year of college.</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--yellow">
+                            <div class="activity-card__icon"> <img src="img/icons/gymnastics.png" alt="Gymnastics figure icon"> </div>
+                            <h4 class="activity-card__title">Tennis</h4>
+                            <p class="activity-card__description">Rated "not too bad" at tennis by high school coach</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--red">
+                            <div class="activity-card__icon"> <img src="img/icons/code.png" alt="Code brackets icon"> </div>
+                            <h4 class="activity-card__title">Pecan</h4>
+                            <p class="activity-card__description">Worked within team of 4 students to design Webapp with Flask to consolidate web data. Won prize for best use of Wolfram Alpha API</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--green">
+                            <div class="activity-card__icon"> <img src="img/icons/folder.png" alt="Folder icon"> </div>
+                            <h4 class="activity-card__title">Forbes 30 under 30 Scholar</h4>
+                            <p class="activity-card__description">Selected from competetive pool of students to attend the Forbes 30 under 30 conference in Boston</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--aqua">
+                            <div class="activity-card__icon"> <img src="img/icons/test-results.png" alt="Test results icon"> </div>
+                            <h4 class="activity-card__title">AP Scholar with Distinction</h4>
+                            <p class="activity-card__description">Received on graduation for successfully passing 10 AP exams, with maximum score (5) received on 9.</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--purple">
+                            <div class="activity-card__icon"> <img src="img/icons/consulting.png" alt="Consulting briefcase icon"> </div>
+                            <h4 class="activity-card__title">NUCC Treasurer</h4>
+                            <p class="activity-card__description">Manage the budget for the Northeastern University Consulting Club</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--black">
+                            <div class="activity-card__icon"> <img src="img/icons/dance.png" alt="Dance silhouette icon"> </div>
+                            <h4 class="activity-card__title">Nataraj Seniors Member</h4>
+                            <p class="activity-card__description">Attempting to learn how to dance for UTSAV Nataraj 2018 show</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--black">
+                            <div class="activity-card__icon"> <img src="img/icons/teacher.png" alt="Teacher at chalkboard icon"> </div>
+                            <h4 class="activity-card__title">DS4200 TA</h4>
+                            <p class="activity-card__description">Grade assignments, coordinate with course partners, and help set-up course website</p>
+                        </div>
+                    </div>
+                    <div class="activity-column">
+                        <div class="activity-card activity-card--black">
+                            <div class="activity-card__icon"> <img src="img/icons/speech.png" alt="Speech podium icon"> </div>
+                            <h4 class="activity-card__title">Student Speaker</h4>
+                            <p class="activity-card__description">One of two students selected to speak to Northeastern Board of Trustees regarding academic experience with combined major</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-toggle text-center">
+                <p class="projects-toggle__intro">Want to dive deeper?</p>
+                <button id="projectsToggleBtn" type="button" class="btn btn-cta btn-cta--dark" data-toggle="collapse" data-target="#projectsCollapse" aria-expanded="false" aria-controls="projectsCollapse">Show Projects</button>
+            </div>
+            <div class="projects-wrapper collapse" id="projectsCollapse" aria-expanded="false">
+                <div class="section" id="references">
+                    <div class="container">
+                        <div class="row project-grid">
+                            <div class="col-sm-6 col-md-4">
+                                <button type="button" class="info-card service-purple project-card" data-toggle="modal" data-target="#modal-project-maze">
+                                    <div class="icon-holder icon-holder--project"> <img src="img/portfolio/maze-game.jpg" alt="Screenshot from The Maze Game" class="icon icon-project"> </div>
+                                    <h4 class="heading">The Maze Game</h4>
+                                    <p class="info-card__role">Fundamentals of CS II</p>
+                                    <p class="info-card__summary">Java maze generator and solver built with Kruskal's Algorithm.</p>
+                                    <span class="info-card__cta">View Details</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <button type="button" class="info-card service-red project-card" data-toggle="modal" data-target="#modal-project-forbidden">
+                                    <div class="icon-holder icon-holder--project"> <img src="img/portfolio/forbidden-island.png" alt="Forbidden Island concept art" class="icon icon-project"> </div>
+                                    <h4 class="heading">Forbidden Island Game</h4>
+                                    <p class="info-card__role">Fundamentals of CS II</p>
+                                    <p class="info-card__summary">Survival-style prototype focused on traversal strategy before waters rise.</p>
+                                    <span class="info-card__cta">View Details</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <button type="button" class="info-card service-green project-card" data-toggle="modal" data-target="#modal-project-music">
+                                    <div class="icon-holder icon-holder--project"> <img src="img/portfolio/music-editor.png" alt="Music editor interface" class="icon icon-project"> </div>
+                                    <h4 class="heading">Music Editor</h4>
+                                    <p class="info-card__role">Fundamentals of CS II</p>
+                                    <p class="info-card__summary">MVC editor with GUI, text, and MIDI views for composing and playback.</p>
+                                    <span class="info-card__cta">View Details</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <button type="button" class="info-card service-orange project-card" data-toggle="modal" data-target="#modal-project-algo">
+                                    <div class="icon-holder icon-holder--project"> <img src="img/portfolio/algo.png" alt="AlgoVisual branding" class="icon icon-project"> </div>
+                                    <h4 class="heading">AlgoVisual</h4>
+                                    <p class="info-card__role">Personal Project</p>
+                                    <p class="info-card__summary">Browser-based sorting algorithm visualizer built with HTML, CSS, and JS.</p>
+                                    <span class="info-card__cta">View Details</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <button type="button" class="info-card service-yellow project-card" data-toggle="modal" data-target="#modal-project-pecan">
+                                    <div class="icon-holder icon-holder--project"> <img src="img/portfolio/pecan-logo.png" alt="Pecan team logo" class="icon icon-project"> </div>
+                                    <h4 class="heading">Pecan</h4>
+                                    <p class="info-card__role">IDEA / COE aHacks Winner</p>
+                                    <p class="info-card__summary">Hackathon-winning personal data search engine powered by Flask and APIs.</p>
+                                    <span class="info-card__cta">View Details</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <button type="button" class="info-card service-black project-card" data-toggle="modal" data-target="#modal-project-dynamic">
+                                    <div class="icon-holder icon-holder--project"> <img src="img/portfolio/database.jpg" alt="Dynamic Business mockup" class="icon icon-project"> </div>
+                                    <h4 class="heading">Dynamic Business</h4>
+                                    <p class="info-card__role">Web Experience</p>
+                                    <p class="info-card__summary">Data storytelling site for Northeastern's entrepreneurship center.</p>
+                                    <span class="info-card__cta">View Details</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <button type="button" class="info-card service-aqua project-card" data-toggle="modal" data-target="#modal-project-ccsne">
+                                    <div class="icon-holder icon-holder--project"> <img src="img/portfolio/network.jpg" alt="CCSNE network visualization" class="icon icon-project"> </div>
+                                    <h4 class="heading">CCSNE Network</h4>
+                                    <p class="info-card__role">DS4200</p>
+                                    <p class="info-card__summary">Interactive network visualization of conferences, attendees, and travel.</p>
+                                    <span class="info-card__cta">View Details</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <button type="button" class="info-card service-purple project-card" data-toggle="modal" data-target="#modal-project-ds4100">
+                                    <div class="icon-holder icon-holder--project"> <img src="img/portfolio/blog-logo.jpg" alt="DS4100 class blog graphic" class="icon icon-project"> </div>
+                                    <h4 class="heading">DS4100 Class Blog</h4>
+                                    <p class="info-card__role">Course Project</p>
+                                    <p class="info-card__summary">Weekly analytics blog capturing lessons from DS4100.</p>
+                                    <span class="info-card__cta">View Details</span>
+                                </button>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <button type="button" class="info-card service-green project-card" data-toggle="modal" data-target="#modal-project-fb">
+                                    <div class="icon-holder icon-holder--project"> <img src="img/portfolio/facebook.jpg" alt="FB Analyzer dashboard" class="icon icon-project"> </div>
+                                    <h4 class="heading">FB Analyzer</h4>
+                                    <p class="info-card__role">Personal Project</p>
+                                    <p class="info-card__summary">Ruby tooling that mines personal messages, calls, and Messenger data.</p>
+                                    <span class="info-card__cta">View Details</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Activities -->
-    <section id="services" class="section section-padded">
-        <div class="container">
-            <div class="row text-center title services">
+    <section id="extracurricular" class="section section--gray">
+        <div class="container container-wide">
+            <div class="row text-center">
                 <div class="col-lg-12">
-                    <h2>Activities</h2>
+                    <h2 class="section-title--xl">Extracurriculars</h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="service service-purple">
-                        <div class="icon-holder"> <img src="img/icons/code-nation.png" alt="Code Nation logo" class="icon"> </div>
-                        <h4 class="heading">Web Development High School Volunteer</h4>
-                        <p class="description">Volunteering with Code Nation as a volunteer in a group of four teaching intro to web development to a 10th grade class in NYC</p>
+            <div class="activity-grid">
+                <div class="activity-column">
+                    <div class="activity-card activity-card--purple">
+                        <div class="activity-card__icon"> <img src="img/icons/code-nation.png" alt="Code Nation logo"> </div>
+                        <h4 class="activity-card__title">Web Development High School Volunteer</h4>
+                        <p class="activity-card__description">Volunteering with Code Nation as a volunteer in a group of four teaching intro to web development to a 10th grade class in NYC</p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="service service-green">
-                        <div class="icon-holder"> <img src="img/icons/USA.png" alt="United States flag icon" class="icon"> </div>
-                        <h4 class="heading">Poll Inspector</h4>
-                        <p class="description">Manhattan Poll Inspector working election day to assist voters, set-up the polling location, and coordinating with election officials</p>
+                <div class="activity-column">
+                    <div class="activity-card activity-card--green">
+                        <div class="activity-card__icon"> <img src="img/icons/USA.png" alt="United States flag icon"> </div>
+                        <h4 class="activity-card__title">Poll Inspector</h4>
+                        <p class="activity-card__description">Manhattan Poll Inspector working election day to assist voters, set-up the polling location, and coordinating with election officials</p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="service service-orange">
-                        <div class="icon-holder"> <img src="img/icons/house-outline.png" alt="House outline icon" class="icon"> </div>
-                        <h4 class="heading">Hall Council President</h4>
-                        <p class="description">In charge of coordinating with fellow council members to improve living environment and host building events for all residents in both building complexes (2 terms)</p>
+                <div class="activity-column">
+                    <div class="activity-card activity-card--neutral">
+                        <div class="activity-card__icon"> <img src="img/icons/patent.png" alt="Paper icon"> </div>
+                        <h4 class="activity-card__title">Patent Holder</h4>
+                        <p class="activity-card__description">Co-patent Owner alongside Palantir colleagues for Network-DB Ontological Approach</p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="service service-red">
-                        <div class="icon-holder"> <img src="img/icons/people.png" alt="Group of people icon" class="icon"> </div>
-                        <h4 class="heading">Husky Ambassador Recruitment Committee</h4>
-                        <p class="description">Work with the rest of the team to enage with students and find/interview the best potential new tour guides for Northeastern University</p>
+                <div class="activity-column">
+                    <div class="activity-card activity-card--yellow">
+                        <div class="activity-card__icon"> <img src="img/icons/runner.png" alt="Runner icon"> </div>
+                        <h4 class="activity-card__title">(Half) Marathon Runner</h4>
+                        <p class="activity-card__description">Brooklyn Half Marathon 2025 - 9:53/mile - 461 Feet Elevation Gain</p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="service service-green">
-                        <div class="icon-holder"> <img src="img/icons/paper.png" alt="Research paper icon" class="icon"> </div>
-                        <h4 class="heading">Entrepreneurial Research Student</h4>
-                        <p class="description">Collect and Analyse data relating to market entry and exit to determine what market conditions most drive firm behavior</p>
+                <div class="activity-column">
+                    <div class="activity-card activity-card--aqua">
+                        <div class="activity-card__icon"> <img src="img/icons/track-bicycle.png" alt="Bicycle icon placeholder"> </div>
+                        <h4 class="activity-card__title">Bicyclist</h4>
+                        <p class="activity-card__description">5Boro Bike Ride (x4) + ~750 Miles Annual Biked</p>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="service service-aqua">
-                        <div class="icon-holder"> <img src="img/icons/statistics.png" alt="Bar chart icon" class="icon"> </div>
-                        <h4 class="heading">Big Data Club President</h4>
-                        <p class="description">Lead E-Board and coordinate with others in the Northeastern and Boston community to promote the value of Big Data to students throughout all disciplines</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service service-purple">
-                        <div class="icon-holder"> <img src="img/icons/id-card.png" alt="ID card icon" class="icon"> </div>
-                        <h4 class="heading">EDGE Summit Attendee</h4>
-                        <p class="description">Nominated to be one of 40 students from around US to attend Marketing EDGE Summit, a conference in New York City centered around marketing analytics</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service service-black">
-                        <div class="icon-holder"> <img src="img/icons/checked.png" alt="Checkmark icon" class="icon"> </div>
-                        <h4 class="heading">Deans List</h4>
-                        <p class="description">Earned GPA high enough to qualify for Dean's list all five semesters at Northeastern</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service">
-                        <div class="icon-holder"> <img src="img/icons/key-outline.png" alt="Key outline icon" class="icon"> </div>
-                        <h4 class="heading">CCIS Mentor</h4>
-                        <p class="description">Mentored new Computer Science students over the summer to prepare them for their first year of college.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service service-yellow">
-                        <div class="icon-holder"> <img src="img/icons/gymnastics.png" alt="Gymnastics figure icon" class="icon"> </div>
-                        <h4 class="heading">Tennis</h4>
-                        <p class="description">Rated "not too bad" at tennis by high school coach</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service service-orange">
-                        <div class="icon-holder"> <img src="img/icons/tower-bridge.png" alt="Tower Bridge icon" class="icon"> </div>
-                        <h4 class="heading">London School of Economics</h4>
-                        <p class="description">Attended LSE in summer for course on Game Theory and corporate strategy. Received A+ grade.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service service-red">
-                        <div class="icon-holder"> <img src="img/icons/code.png" alt="Code brackets icon" class="icon"> </div>
-                        <h4 class="heading">Pecan</h4>
-                        <p class="description">Worked within team of 4 students to design Webapp with Flask to consolidate web data. Won prize for best use of Wolfram Alpha API</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service service-green">
-                        <div class="icon-holder"> <img src="img/icons/folder.png" alt="Folder icon" class="icon"> </div>
-                        <h4 class="heading">Forbes 30 under 30 Scholar</h4>
-                        <p class="description">Selected from competetive pool of students to attend the Forbes 30 under 30 conference in Boston</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service service-aqua">
-                        <div class="icon-holder"> <img src="img/icons/test-results.png" alt="Test results icon" class="icon"> </div>
-                        <h4 class="heading">AP Scholar with Distinction</h4>
-                        <p class="description">Received on graduation for successfully passing 10 AP exams, with maximum score (5) received on 9.</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service service-purple">
-                        <div class="icon-holder"> <img src="img/icons/consulting.png" alt="Consulting briefcase icon" class="icon"> </div>
-                        <h4 class="heading">NUCC Treasurer</h4>
-                        <p class="description">Manage the budget for the Northeastern University Consulting Club</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service service-black">
-                        <div class="icon-holder"> <img src="img/icons/dance.png" alt="Dance silhouette icon" class="icon"> </div>
-                        <h4 class="heading">Nataraj Seniors Member</h4>
-                        <p class="description">Attempting to learn how to dance for UTSAV Nataraj 2018 show</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service service-black">
-                        <div class="icon-holder"> <img src="img/icons/teacher.png" alt="Teacher at chalkboard icon" class="icon"> </div>
-                        <h4 class="heading">DS4200 TA</h4>
-                        <p class="description">Grade assignments, coordinate with course partners, and help set-up course website</p>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="service service-black">
-                        <div class="icon-holder"> <img src="img/icons/speech.png" alt="Speech podium icon" class="icon"> </div>
-                        <h4 class="heading">Student Speaker</h4>
-                        <p class="description">One of two students selected to speak to Northeastern Board of Trustees regarding academic experience with combined major</p>
+                <div class="activity-column">
+                    <div class="activity-card activity-card--orange">
+                        <div class="activity-card__icon"> <img src="img/icons/hiking.png" alt="Hiker icon placeholder"> </div>
+                        <h4 class="activity-card__title">Hiker</h4>
+                        <p class="activity-card__description">Longest Hike: 5 Day Salkantay Trail Hike - 48.8mi - 15,190 Feet Max Altitude</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="cut cut-bottom"></div>
     </section>
-    <!-- Portfolio Grid Section -->
-    <div class="col-lg-12 text-center portfolio-title" id="portfolio">
-        <h2 class="section-heading">Portfolio</h2>
-        <h3 class="section-subheading text-muted">A brief description of my projects</h3> </div>
-    <!-- Portfolio v2 -->
-    <div class="section" id="references">
-        <div class="container">
-            <div class="col-sm-12">
-                <ul id="filter" data-animate="fadeInUp">
-                    <li class="active"><a href="#" data-filter="all">All</a> </li>
-                    <li><a href="#" data-filter="data">Data</a> </li>
-                    <li><a href="#" data-filter="class">Class</a> </li>
-                    <li><a href="#" data-filter="hackathon">Hackathon</a> </li>
-                    <li><a href="#" data-filter="other">Other</a> </li>
-                </ul>
-                <div id="detail"> <span class="close">&times;</span>
-                    <div id="detail-slider"></div>
-                    <div class="text-center">
-                        <h1 id="detail-title">&nbsp;</h1> </div>
-                    <div id="detail-content"></div>
+    <!-- Detail Modals -->
+    <div class="modal fade" id="modal-palantir" tabindex="-1" role="dialog" aria-labelledby="modal-palantir-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-palantir-label">Lead – Automotive | Palantir</h4>
                 </div>
-                <!-- Reference detail -->
-                <div id="references-masonry" data-animate="fadeInUp">
-                    <div class="reference-item" data-category="class">
-                        <div class="reference">
-                            <a href="#"> <img src="img/portfolio/maze-game.jpg" class="img-responsive" alt="" />
-                                <div class="overlay">
-                                    <h3 class="reference-title">The Maze Game</h3>
-                                    <p>Fundamentals of CS II: Class Project</p>
-                                </div>
-                            </a>
-                            <div class="sr-only reference-description" data-images="img/portfolio/maze.jpg">
-                                <p>A project for our Fundamentals of Computer Science II course, this java program required my partner and I to use Java graphics libraries to design a randomly created maze sized up to 100 x 60 blocks using Kruskal's Algorithm. We then would allow the user to solve it, with keyboard controls, or let the computer, running depth first- or breadth first-search, to find the solution. Created with Jonathan Northcott.</p>
-                                <p>Instructions:</p>
-                                <p>- Use <strong>'h'</strong> and arrow keys to select start and end point<br>- clicking <strong>'s'</strong> forms the maze a step at the time which can be skipped by hitting <strong>'i'</strong><br>- <strong>'r'</strong> forms a new maze and <strong>'x'</strong> starts over the current one<br>- <strong>'n'</strong> changes the colors<br>-<strong>'p'</strong> allows a player to search with the arrow keys<br>- <strong>'d'</strong> runs a depth-first search and <strong>'b'</strong> runs a breadth-first search<br>-hitting <strong>'x'</strong> twice quits the game</p>
-                                <a href="code/MazeLaunch.jnlp" download>Download and Play Here!</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reference-item" data-category="class">
-                        <div class="reference">
-                            <a href="#"> <img src="img/portfolio/forbidden-island.png" class="img-responsive" alt="" />
-                                <div class="overlay">
-                                    <h3 class="reference-title">Forbidden Island Game</h3>
-                                    <p>Fundamentals of CS II: Class Project</p>
-                                </div>
-                            </a>
-                            <div class="sr-only reference-description" data-images="img/portfolio/island.jpg">
-                                <p>The second project in our Fundamentals of CS II course, this project required us to design a game where a user crashlands on an island, and needs to find all the pieces of his/her helicopter and collect them before the island floods and submerges them. It uses Java graphics libraries to create a randomly generated multi-terrain island on each initial start (based on our algorithm to ensure the game is winnable) and then a timer combined with another algorithm to find the lowest elevated points of the island - near water - and then submerged them at a rate chosen by the user. Created with Jonathan Northcott.</p>
-                                
-                                <p>Instructions: </p>
-                                <p>You crash landed on the highest peak of an island. Your helicopter’s six parts are scattered across the land which you must collect before you can fly away. This would be an easy task if it weren’t for the rising tide. The tide you say, I have plenty of time before it reaches the top of the mountain, you think. Well, that’s where you are wrong. Time moves much faster in this new dimension where every second there is a half of a second back on Earth. Every ten intergalactic seconds means another level the water rises.<br><br>- use <strong>arrow keys</strong> to move and <strong>'p'</strong> pauses the game<br>- after collecting the scuba tank, pressing <strong>'/'</strong> activates it allowing you to go through water cells for five seconds<br>- pressing <strong>'b'</strong> allows you to raise the cells up around you a limited amount of times<br>- <strong>'m'</strong>, <strong>'r'</strong>, and <strong>'t'</strong> change how the island is generated<br>- typing any other key enters text at the top. <strong>'`'</strong> deletes a character<br><strong>CHEATS ARE:</strong><br>- "12345678" refills Engineer ability<br>- "h202wine" turns the ocean red<br>- "sgodvals" enables God mode<br>- "infinidy" sets Engineer ability to infinite capacity<br>- "alieninv" transforms you into an alien<br>- "hidehuds" toggles the HUD on your screen<br>- "shuffles" resets and shuffles parts<br>- "fweezwld" stops time<br>- "floodqwk" increases flood speed<br>- "floodslw" slows the flooding</p>
-                                <a href="code/FILaunch.jnlp" download>Download and Play Here!</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reference-item" data-category="class">
-                        <div class="reference">
-                            <a href="#"> <img src="img/portfolio/music-editor.png" class="img-responsive" alt="" />
-                                <div class="overlay">
-                                    <h3 class="reference-title">The Music Editor</h3>
-                                    <p>Object Oriented Design: Class Project</p>
-                                </div>
-                            </a>
-                            <div class="sr-only reference-description" data-images="img/portfolio/music-sheet.jpg">
-                                <p>The final project for our Object Oriented Design class. This was a month-long endeavor, and required the use of the Midi library for sound to create a garage band-esque music creator in Java. This standalone Java applet allowed users to create a song with notes of any octave and pitch, with multiple different instruments. It used a Model-View-Controller setup, with keyboard and mouse handlers for the controller, JavaFx for the view, and a hashmap-based collection of Notes for the Model</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reference-item" data-category="class">
-                        <div class="reference">
-                            <a href="#"> <img src="img/portfolio/algo.png" class="img-responsive" alt="" />
-                                <div class="overlay">
-                                    <h3 class="reference-title">The Snell Data Project</h3>
-                                    <p>Algorithms Class Project</p>
-                                </div>
-                            </a>
-                            <div class="sr-only reference-description" data-images="img/portfolio/library.jpg">
-                                <p>A project for our Algorithms and Data class, the goal of this project was to create an algorithm that could accurately predict how many students were in Snell library, the main library at Northeastern, given a date, time, and weather for the day. To create this algorithm, we used a year's worth of historic sign-in data from Snell library, weather data recorded at Logan Airport by the NOAA, and Java combined with preliminary work done in Excel. Our prototype algorithm could predict library usage with a margin of error of +/- 12%.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reference-item" data-category="hackathon">
-                        <div class="reference">
-                            <a href="#"> <img src="img/portfolio/pecan-logo.png" class="img-responsive" alt="" />
-                                <div class="overlay">
-                                    <h3 class="reference-title">Pecan</h3>
-                                    <p>Hack Beanpot Project</p>
-                                </div>
-                            </a>
-                            <div class="sr-only reference-description" data-images="img/portfolio/hacks.jpg">
-                                <p>A 4-member team project at Hack Beanpot, a premier Boston hackathon for Boston undergraduates, this web app was designed with the goal of aiding people in conversations on topics they weren't the most knowledgeable on. The site would take a search term given to it, and combine information from multiple sources - Google, Wikipedia, Wolfram Alpha, etc. - to create a quick synopsis on the topic. We also gave a list of key facts to know, a live twitter stream on it to show what people are saying, and sensitivity analysis on the topic, done with the Indico API, to show what sort of response to expect when going into conversation. The goal was ultimately to allow the user to search their term, take 30 seconds to read the information we provide, and then become knowledgeable enough to hold a medium-level conversation in the topic</p>
-                                <p>Prize Winner: Best use of Wolfram Alpha API</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reference-item" data-category="data">
-                        <div class="reference">
-                            <a href="#"> <img src="img/portfolio/database.jpg" class="img-responsive" alt="" />
-                                <div class="overlay">
-                                    <h3 class="reference-title">NEU Cooler</h3>
-                                    <p>Database Project</p>
-                                </div>
-                            </a>
-                            <div class="sr-only reference-description" data-images="img/portfolio/neu-cooler.png">
-                                <p>A Project created in our database design class with the intention of expanding on it for the whole CCIS community at Northeastern. This website is meant as a database for current Northeastern students looking for a co-op, who want to find someone who has worked in their position of interest before. The site lets users set search parameters, find who they're looking for, and then get in contact with them to learn more about the job and to ask any questions they may have</p>
-                                <p>Stack: HTML, CSS, JavaScript, MongoDB, Node.JS</p>
-                                <p>http://neu-cooler.me/</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reference-item" data-category="data">
-                        <div class="reference">
-                            <a href="#"> <img src="img/portfolio/network.jpg" class="img-responsive" alt="" />
-                                <div class="overlay">
-                                    <h3 class="reference-title">CCSNE Network</h3>
-                                    <p>Data Visualization Project</p>
-                                </div>
-                            </a>
-                            <div class="sr-only reference-description" data-images="img/portfolio/CCSNE.png">
-                                <p>Created for our DS4200 class, this webpage was designed to take all the information on this organization's events and members, stored at the time in JSON and CSV files, and transform it into an intuitive and dynamic network visualization. This graph showed who was going to which events and how far they traveled to do so. It also gave useful information on those events, and used the Google Maps api to calculate the distance to drive between areas, thus giving the user a better idea of the effect distance played in event attendence and popularity. Majority of code done in D3, JQuery, and JS, with HTML/CSS for the front-end.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="reference-item" data-category="other">
-                        <div class="reference">
-                            <a href="#"> <img src="img/portfolio/blog-logo.jpg" class="img-responsive" alt="" />
-                                <div class="overlay">
-                                    <h3 class="reference-title">DS4100 Class Blog</h3>
-                                    <p>DS4100</p>
-                                </div>
-                            </a>
-                            <div class="sr-only reference-description" data-images="img/portfolio/blog.jpg">
-                                <p>Created a small blog page for my DS4100 class (Data Collection, Integration, &amp; Analysis). The page is meant to give a weekly look into what we'd learned that week, and how it applied to the outside world and other works we did.</p>
-                                <br> <a href="ds4100">rajnarayan.info/ds4100</a> </div>
-                        </div>
-                    </div>
-                    <div class="reference-item" data-category="data">
-                        <div class="reference">
-                            <a href="#"> <img src="img/portfolio/facebook.jpg" class="img-responsive" alt="" />
-                                <div class="overlay">
-                                    <h3 class="reference-title">FB Analyser</h3>
-                                    <p>Personal Project</p>
-                                </div>
-                            </a>
-                            <div class="sr-only reference-description" data-images="img/portfolio/facebook_2.jpg">
-                                <p>Working on data analysis project in Ruby to parse personal text message, call, and Facebook Messenger data. Code outputs various metrics on most active conversations, persistance of conversation, closest friends, etc. </p>
-                                <br> <a href="https://github.com/rajn1/FB_Analyzer">https://github.com/rajn1/FB_Analyzer</a> </div>
-                        </div>
-                    </div>
+                <div class="modal-body text-left">
+                    <ul>
+                        <li>Co-led a 10-person team across the U.S. automotive industry to drive pre-sales deal capture and post-sales expansion.</li>
+                        <li>Drove $70M+ in signed contracts across multiple strategic enterprise clients through technical solution design and delivery.</li>
+                        <li>Built and deployed AI/ML models (vision, audio, LLM) and optimization algorithms in production environments.</li>
+                        <li>Led 30+ executive workshops, bootcamps, and onsite implementation sessions to accelerate platform adoption.</li>
+                        <li>Trained 50+ client personnel on platform capabilities and solution development methodologies.</li>
+                        <li>Designed custom data pipelines and analytical frameworks to solve complex operational challenges across automotive manufacturing and supply chain.</li>
+                        <li>Led three direct reports and served as a technical interviewer for candidate evaluation and hiring decisions.</li>
+                
+                    </ul>
                 </div>
-                <!-- /#references-masonry -->
             </div>
-            <!-- /.12 -->
         </div>
-        <!-- /.container -->
     </div>
-    <!-- /.section -->
-    <!-- Callout -->
-    <aside class="callout">
-        <div class="text-vertical-center">
-            <h1 class="workTitle">Work and Education</h1> </div>
-    </aside>
-    <section id="workAndExperience" class="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="nu"> <img class="img-portfolio img-responsive" src="img/school.png"> </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="portfolio-item">
-                                <a href="work"> <img class="img-portfolio img-responsive" src="img/work.jpeg"> </a>
-                            </div>
-                        </div> <a href="Resume_Narayan_Raj.pdf" class="btn btn-dark">My Resume</a> </div>
+    <div class="modal fade" id="modal-allvue" tabindex="-1" role="dialog" aria-labelledby="modal-allvue-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-allvue-label">Senior Product Specialist | Allvue Systems</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <ul>
+                        <li>Managed technical implementation projects across seven financial services clients.</li>
+                        <li>Developed a custom SQL trade management and approval module for a public investment client.</li>
+                        <li>Led onboarding of a new asset management client and delivered a tailored credit tracking solution.</li>
+                        <li>Executed trade integrations between funds and cut processing time by 60%.</li>
+                        <li>Represented Allvue at recruiting events to bring in new graduates.</li>
+                    </ul>
                 </div>
             </div>
-    </section>
-    <!-- Map -->
-    <section class="map">
-        <iframe width="100%" height="400px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJMaZfGgpZwokR0gtRaGghT_w&key=AIzaSyCKHb-26XKe2PbdvTyAOzLNaZu1jHCHEHw"></iframe>
-    </section>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-gs" tabindex="-1" role="dialog" aria-labelledby="modal-gs-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-gs-label">Management &amp; PWM Analyst Co-op | Goldman Sachs</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <ul>
+                        <li>Performed analysis and designed Python models to guide PWM leadership decisions.</li>
+                        <li>Analyzed internal metrics across all U.S. private wealth offices and forecasted growth using 19 years of data.</li>
+                        <li>Produced presentations on strategic initiatives for senior management.</li>
+                        <li>Monitored private equity capital calls and distributions across client accounts.</li>
+                        <li>Researched prospects, prepared client-ready materials, and modernized how the team leveraged data.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-ssga" tabindex="-1" role="dialog" aria-labelledby="modal-ssga-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-ssga-label">R&amp;D Analyst Co-op | State Street Global Advisors</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <ul>
+                        <li>Led the redesign of the internal interns page, increasing page views by 50%.</li>
+                        <li>Developed the front end for a new internal task tracker with Python, Flask, HTML, CSS, and JavaScript.</li>
+                        <li>Built SharePoint/JavaScript portals to give business users controlled database access.</li>
+                        <li>Created department-wide data visualizations in Tableau.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-research" tabindex="-1" role="dialog" aria-labelledby="modal-research-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-research-label">Research Assistant | D'Amore-McKim School of Business</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <ul>
+                        <li>Parsed databases and cleaned data for use in faculty research.</li>
+                        <li>Built Excel models and visualizations to analyze and present findings.</li>
+                        <li>Wrote VBA algorithms to dynamically create arrays of information.</li>
+                        <li>Produced data visualizations for field conferences.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-cpep" tabindex="-1" role="dialog" aria-labelledby="modal-cpep-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-cpep-label">Connecticut Pre-Engineering Program</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <ul>
+                        <li>Created prototype Rube Goldberg kits for local middle schools and supervised teams to cut costs by 18%.</li>
+                        <li>Designed the rubric used with the final release kits.</li>
+                        <li>Developed a mobile application with MIT App Inventor and Java for Boehringer Ingelheim.</li>
+                        <li>Built a team website, geolocation algorithms, and investor-ready presentations.</li>
+                        <li>Mentored students as they pitched technical solutions to local partners.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-nu" tabindex="-1" role="dialog" aria-labelledby="modal-nu-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-nu-label">Northeastern University</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p>B.S. in Business Administration &amp; Computer Science · Magna Cum Laude · 3.73 GPA.</p>
+                    <h5>Coursework Highlights</h5>
+                    <ul>
+                        <li>Computer Systems, Database Design, Algorithms &amp; Data, Software Development.</li>
+                        <li>Data Visualization, Impact Investing &amp; Social Finance, Entrepreneurial Finance.</li>
+                        <li>Corporate Finance, Investments, Managerial Accounting, Business Strategy in Action.</li>
+                    </ul>
+                    <h5>Honors &amp; Leadership</h5>
+                    <ul>
+                        <li>Dean's List (x7), Forbes 30 Under 30 Scholar, Marketing EDGE Summit attendee.</li>
+                        <li>Husky Ambassador, CCIS Student Mentor, DS4200 TA, Big Data Club President.</li>
+                        <li>Two-term Hall Council President and student speaker to Northeastern's Board of Trustees.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-lse" tabindex="-1" role="dialog" aria-labelledby="modal-lse-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-lse-label">London School of Economics</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p>Summer course focused on Game Theory and Competitive Strategy.</p>
+                    <ul>
+                        <li>Modeled strategic market moves and pricing competition.</li>
+                        <li>Collaborated with an international cohort to apply economic frameworks.</li>
+                        <li>Earned an A+ final grade.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-dhs" tabindex="-1" role="dialog" aria-labelledby="modal-dhs-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-dhs-label">Danbury High School</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p>Class of 2014 · 4.31/4.5 GPA</p>
+                    <ul>
+                        <li>Honors: DECA Marketing Award, Key Club Leadership Award, AP Scholar with Distinction.</li>
+                        <li>Leadership: Vice President of Key Club, Vice President of Debate Team, Board of Governors Member.</li>
+                        <li>Organized service projects and built early interest in entrepreneurship and data storytelling.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project Detail Modals -->
+    <div class="modal fade" id="modal-project-maze" tabindex="-1" role="dialog" aria-labelledby="modal-project-maze-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-project-maze-label">The Maze Game</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p>A Fundamentals of Computer Science II project built in Java with Kruskal's Algorithm to procedurally generate mazes up to 100 x 60 blocks. Players can solve puzzles manually or hand control to automated DFS/BFS solvers. Created with Jonathan Northcott.</p>
+                    <p>Instructions:</p>
+                    <ul>
+                        <li>Use <strong>h</strong> and arrow keys to select start/end points.</li>
+                        <li>Press <strong>s</strong> to form the maze step-by-step, <strong>i</strong> to skip animation.</li>
+                        <li><strong>r</strong> creates a new maze, while <strong>x</strong> restarts the current puzzle (press twice to quit).</li>
+                        <li><strong>n</strong> cycles color palettes and <strong>p</strong> enables player-controlled solving.</li>
+                        <li><strong>d</strong> runs depth-first search; <strong>b</strong> runs breadth-first search.</li>
+                    </ul>
+                    <p><a href="code/MazeLaunch.jnlp" download>Download and Play Here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-project-forbidden" tabindex="-1" role="dialog" aria-labelledby="modal-project-forbidden-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-project-forbidden-label">Forbidden Island Game</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p>A CS II survival challenge where players crash-land on an island, mark safe land, and locate a helicopter before flood waters or roaming enemies end the run. Built with Jonathan Northcott.</p>
+                    <p>Instructions:</p>
+                    <ul>
+                        <li>Press <strong>h</strong> to start and use <strong>WASD</strong> to move.</li>
+                        <li><strong>f</strong> reveals obstacles, <strong>m</strong> pauses enemies, and <strong>n</strong> toggles helicopter visibility.</li>
+                        <li><strong>r</strong> randomizes the island and <strong>t</strong> toggles the full map view.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-project-music" tabindex="-1" role="dialog" aria-labelledby="modal-project-music-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-project-music-label">Music Editor</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p>Final CS II project partnering with a Logic course to build a full MVC music editor. The application renders, edits, and plays compositions through GUI, text, and MIDI views. Created with Leah Rand.</p>
+                    <p><a href="https://github.com/rajn1/Music-Editor">View the project on GitHub</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-project-algo" tabindex="-1" role="dialog" aria-labelledby="modal-project-algo-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-project-algo-label">AlgoVisual</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p>Partnered with Vishal to create AlgoVisual, a web-based teaching tool that animates sorting algorithms to help students understand complexity and flow. Built with plain HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-project-pecan" tabindex="-1" role="dialog" aria-labelledby="modal-project-pecan-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-project-pecan-label">Pecan</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p>Hackathon project that won IDEA / COE aHacks by building a personal search engine with Flask, the Wolfram Alpha API, and JavaScript to aggregate key insights from multiple sites into one hub.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-project-dynamic" tabindex="-1" role="dialog" aria-labelledby="modal-project-dynamic-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-project-dynamic-label">Dynamic Business</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p>Partnered with Northeastern's Center for Entrepreneurship to build a data storytelling page that surfaced weekly business profiles and measurable impact, helping the center understand why visitors engaged with content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-project-ccsne" tabindex="-1" role="dialog" aria-labelledby="modal-project-ccsne-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-project-ccsne-label">CCSNE Network</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p>DS4200 project that ingested event and member data from JSON/CSV files to generate an interactive D3 network visualization. The experience highlighted attendee travel, event details, and Google Maps–powered distance calculations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-project-ds4100" tabindex="-1" role="dialog" aria-labelledby="modal-project-ds4100-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-project-ds4100-label">DS4100 Class Blog</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p>A lightweight blog for DS4100 (Data Collection, Integration, &amp; Analysis) chronicling weekly learnings and real-world applications.</p>
+                    <p><a href="ds4100">Visit rajnarayan.info/ds4100</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-project-fb" tabindex="-1" role="dialog" aria-labelledby="modal-project-fb-label">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="modal-project-fb-label">FB Analyzer</h4>
+                </div>
+                <div class="modal-body text-left">
+                    <p>A Ruby-based data analysis project parsing personal text messages, calls, and Facebook Messenger exports to surface conversation metrics, persistence, and closest contacts.</p>
+                    <p><a href="https://github.com/rajn1/FB_Analyzer">Explore the GitHub repository</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <footer id="contact">
-        <div class="container">
+        <div class="container container-wide">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
                     <h4 class="quicksand"><strong>Contact Me!</strong>
                     </h4>
                     <ul class="list-unstyled">
-                        <li class='quicksand-small'><i class="fa fa-home fa-fw fa-red"></i> New York City, NY</li>
-                        <li class='quicksand-small'><i class="fa fa-envelope-o fa-fw fa-red"></i> <a href="mailto:rajnarayan7@outlook.com">rajnarayan7@outlook.com</a> </li>
+                        <li class='quicksand-small'><i class="fa fa-home fa-fw"></i> New York City, NY</li>
+                        <li class='quicksand-small'><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:rajnarayan7@outlook.com">rajnarayan7@outlook.com</a> </li>
                     </ul>
                     <br>
                     <ul class="list-inline">
@@ -452,7 +768,7 @@
                     </ul>
                     <p><a href="https://nilanarayan.github.io">Looking for a Mechanical Engineer? Look Here!</a></p>
                     <hr class="small">
-                    <p class="text-muted">&copy; Raj Narayan 2024</p>
+                    <p class="text-muted">&copy; Raj Narayan 2025</p>
                 </div>
             </div>
         </div>
@@ -465,11 +781,19 @@
     <script src="js/grayscale.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
-    <!-- Code for Portfolio -->
-    <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/jquery.cookie.js"></script>
     <script src="js/front.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script>
+        (function ($) {
+            var $toggle = $('#projectsToggleBtn');
+            $('#projectsCollapse').on('show.bs.collapse', function () {
+                $toggle.text('Hide Projects');
+            }).on('hide.bs.collapse', function () {
+                $toggle.text('Show Projects');
+            });
+        })(jQuery);
+    </script>
 </body>
 
 </html>
