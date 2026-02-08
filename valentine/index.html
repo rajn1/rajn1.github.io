@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valentine</title>
+  <style>
+    :root {
+      --bg-1: #fff4f8;
+      --bg-2: #ffe7ef;
+      --card: #ffffff;
+      --text: #4a1f33;
+      --accent: #d6336c;
+      --accent-dark: #b02557;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      background: radial-gradient(circle at top, var(--bg-1), var(--bg-2));
+      color: var(--text);
+      font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+    }
+
+    .card {
+      width: min(720px, 100%);
+      background: var(--card);
+      border-radius: 18px;
+      padding: 32px 24px;
+      box-shadow: 0 14px 45px rgba(0, 0, 0, 0.12);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 24px;
+      font-size: clamp(2rem, 6vw, 4rem);
+      line-height: 1.08;
+      letter-spacing: 0.4px;
+    }
+
+    .subtle {
+      margin: 0 0 12px;
+      font-size: 1.1rem;
+    }
+
+    .hint-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      margin-left: 8px;
+      border-radius: 50%;
+      background: #ffe8f0;
+      color: var(--accent-dark);
+      font-weight: 800;
+      line-height: 1;
+      position: relative;
+      cursor: default;
+      user-select: none;
+    }
+
+    .hint-wrap::after {
+      content: "alfalfa";
+      position: absolute;
+      left: 50%;
+      top: calc(100% + 8px);
+      transform: translateX(-50%);
+      opacity: 0;
+      pointer-events: none;
+      background: #fff;
+      color: var(--text);
+      border: 1px solid #f0bfd0;
+      border-radius: 8px;
+      padding: 6px 10px;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+      transition: opacity 0.15s ease;
+      z-index: 10;
+    }
+
+    .hint-wrap:hover::after {
+      opacity: 1;
+    }
+
+    .row {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    input[type="password"] {
+      width: min(340px, 100%);
+      border: 2px solid #f0bfd0;
+      border-radius: 10px;
+      padding: 12px 14px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    input[type="password"]:focus {
+      border-color: var(--accent);
+    }
+
+    button {
+      border: none;
+      border-radius: 999px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.15s ease, background 0.2s ease;
+    }
+
+    .primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .primary:hover {
+      background: var(--accent-dark);
+      transform: translateY(-1px);
+    }
+
+    .secondary {
+      background: #ffe8f0;
+      color: var(--text);
+    }
+
+    .secondary:hover {
+      background: #ffd9e7;
+      transform: translateY(-1px);
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .error {
+      margin-top: 12px;
+      min-height: 20px;
+      color: #b3261e;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <section id="gate">
+      <p class="subtle">Enter password to continue <span class="hint-wrap" aria-label="Password hint">?</span></p>
+      <div class="row">
+        <input id="passwordInput" type="password" autocomplete="off" placeholder="Password">
+        <button id="unlockBtn" class="primary" type="button">Unlock</button>
+      </div>
+      <p id="errorMsg" class="error"></p>
+    </section>
+
+    <section id="proposal" class="hidden">
+      <h1>Do you want to be my valentine?</h1>
+      <div class="row">
+        <button id="yesBtn" class="primary" type="button">Yes</button>
+        <button id="noBtn" class="secondary" type="button">No</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const passwordInput = document.getElementById("passwordInput");
+    const unlockBtn = document.getElementById("unlockBtn");
+    const gate = document.getElementById("gate");
+    const proposal = document.getElementById("proposal");
+    const errorMsg = document.getElementById("errorMsg");
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+
+    const PASSWORD = "luscerne";
+    const schedulePath = "/valentine/schedule/";
+
+    function openSchedule() {
+      sessionStorage.setItem("valentinePassOnce", "1");
+      window.location.href = schedulePath;
+    }
+
+    function unlock() {
+      if (passwordInput.value === PASSWORD) {
+        gate.classList.add("hidden");
+        proposal.classList.remove("hidden");
+        errorMsg.textContent = "";
+      } else {
+        errorMsg.textContent = "Incorrect password. Try again.";
+      }
+    }
+
+    unlockBtn.addEventListener("click", unlock);
+    passwordInput.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        unlock();
+      }
+    });
+
+    yesBtn.addEventListener("click", openSchedule);
+    noBtn.addEventListener("click", openSchedule);
+
+    noBtn.addEventListener("mouseenter", function () {
+      noBtn.textContent = "Yes";
+    });
+
+    noBtn.addEventListener("mouseleave", function () {
+      noBtn.textContent = "No";
+    });
+  </script>
+</body>
+</html>
