@@ -150,6 +150,10 @@ INFO CARDS
 .icon-wide {
   max-width: 80%;
 }
+.info-card .heading {
+  font-size: 20px;
+  font-weight: 700;
+}
 .info-card__role {
   font-weight: 600;
   color: #444;
@@ -189,25 +193,38 @@ INFO CARDS
 .info-card.service-black {
   border-top: 3px solid #222;
 }
+.info-card.service-openai {
+  border-top: 3px solid #000;
+}
 .info-card.service-aqua {
   border-top: 3px solid #45b2ff;
 }
-.info-card.service-black .info-card__years {
+.info-card.service-black .info-card__years,
+.info-card.service-black .info-card__cta {
   color: #222;
 }
-.info-card.service-purple .info-card__years {
+.info-card.service-openai .info-card__years,
+.info-card.service-openai .info-card__cta {
+  color: #000;
+}
+.info-card.service-purple .info-card__years,
+.info-card.service-purple .info-card__cta {
   color: #784dff;
 }
-.info-card.service-goldman .info-card__years {
+.info-card.service-goldman .info-card__years,
+.info-card.service-goldman .info-card__cta {
   color: #1c4f91;
 }
-.info-card.service-state-street .info-card__years {
+.info-card.service-state-street .info-card__years,
+.info-card.service-state-street .info-card__cta {
   color: #00653b;
 }
-.info-card.service-orange .info-card__years {
+.info-card.service-orange .info-card__years,
+.info-card.service-orange .info-card__cta {
   color: #ffb347;
 }
-.info-card.service-connecticut .info-card__years {
+.info-card.service-connecticut .info-card__years,
+.info-card.service-connecticut .info-card__cta {
   color: #003e7e;
 }
 .info-card.service-purple:hover {
@@ -227,6 +244,9 @@ INFO CARDS
 }
 .info-card.service-black:hover {
   border-color: black;
+}
+.info-card.service-openai:hover {
+  border-color: #000;
 }
 .info-card.service-aqua:hover {
   border-color: #45FFEF;
