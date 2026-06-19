@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Drinks clipart</title>
+  <rect width="160" height="160" rx="28" fill="#f6f0ff"/>
+  <path d="M43 39h44L80 88H50L43 39z" fill="#ffffff" stroke="#30465f" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M49 57h32l-4 26H54l-5-26z" fill="#ffb703"/>
+  <path d="M65 88v27M50 115h31" stroke="#30465f" stroke-width="5" stroke-linecap="round"/>
+  <path d="M92 52h35l-7 58H99L92 52z" fill="#ffffff" stroke="#30465f" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M98 69h23l-4 34h-15l-4-34z" fill="#ef476f"/>
+  <path d="M111 52l16-20" stroke="#30465f" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="52" cy="70" r="4" fill="#ffffff"/>
+  <circle cx="111" cy="84" r="4" fill="#ffffff"/>
+  <path d="M39 126h91" stroke="#c7b6ff" stroke-width="7" stroke-linecap="round"/>
+</svg>

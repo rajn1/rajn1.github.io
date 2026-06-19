@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Walk clipart</title>
+  <rect width="160" height="160" rx="28" fill="#edf7ff"/>
+  <path d="M25 117c17-19 34-24 51-16 15 7 27 8 58-14" fill="none" stroke="#9fd8cb" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="73" cy="39" r="13" fill="#ffd166" stroke="#30465f" stroke-width="5"/>
+  <path d="M73 54l-9 29 28 16M66 82l-20 17M84 73l22-8M76 98l-11 28M92 99l19 22" fill="none" stroke="#30465f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M35 42c10-12 23-12 33 0M104 35c9-9 21-9 30 0" fill="none" stroke="#f6b9c9" stroke-width="6" stroke-linecap="round"/>
+</svg>

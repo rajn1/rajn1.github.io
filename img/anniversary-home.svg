@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Return home clipart</title>
+  <rect width="160" height="160" rx="28" fill="#fff7e8"/>
+  <path d="M35 75l45-38 45 38v49H35V75z" fill="#ffffff" stroke="#30465f" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M25 79l55-47 55 47" fill="none" stroke="#ef476f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M68 124V91h24v33" fill="#eaf4ff" stroke="#30465f" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="87" cy="108" r="3" fill="#30465f"/>
+  <path d="M51 89h13v13H51zM96 89h13v13H96z" fill="#ffd166" stroke="#30465f" stroke-width="4"/>
+  <path d="M37 132h86" stroke="#9fd8cb" stroke-width="7" stroke-linecap="round"/>
+</svg>

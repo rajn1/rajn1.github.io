@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anniversary Trip</title>
+  <link rel="shortcut icon" href="../img/pencil.ico">
+  <style>
+    :root {
+      --paper: #fffaf4;
+      --ink: #392b32;
+      --muted: #7a6570;
+      --rose: #ef476f;
+      --rose-soft: #ffe4ec;
+      --sky: #dff2ff;
+      --mint: #dff7e7;
+      --sun: #ffeaa7;
+      --line: #f1cfbc;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(180deg, rgba(255, 228, 236, 0.76), rgba(255, 250, 244, 0.94)),
+        var(--paper);
+      color: var(--ink);
+      font-family: "Avenir Next", "Trebuchet MS", "Segoe UI", sans-serif;
+      line-height: 1.5;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 22px 0 44px;
+    }
+
+    .countdown {
+      background: var(--card);
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 22px 18px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(57, 43, 50, 0.08);
+    }
+
+    .countdown__label {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .timer {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 0 auto 12px;
+      max-width: 620px;
+    }
+
+    .timer__box {
+      min-width: 0;
+      background: var(--rose-soft);
+      border: 2px solid #f7bfd0;
+      border-radius: 8px;
+      padding: 10px 8px;
+    }
+
+    .timer__number {
+      display: block;
+      font-size: clamp(1.8rem, 8vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .timer__unit {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    .countdown__date {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .celebration {
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .celebration__text {
+      margin: 0 0 10px;
+      color: var(--rose);
+      font-size: clamp(1.7rem, 6vw, 3rem);
+      font-weight: 800;
+      line-height: 1.05;
+    }
+
+    .heart {
+      display: inline-grid;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 0;
+      place-items: center;
+      background: var(--rose);
+      border: 3px solid #b83257;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 2.35rem;
+      line-height: 1;
+      box-shadow: 0 8px 0 #f7bfd0;
+    }
+
+    .section-title {
+      margin: 22px 0 14px;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      text-align: center;
+    }
+
+    .weather {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .weather-card,
+    .timeline-item {
+      background: var(--card);
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(57, 43, 50, 0.07);
+    }
+
+    .weather-card {
+      padding: 16px 12px;
+      text-align: center;
+    }
+
+    .clipart {
+      width: 82px;
+      height: 82px;
+      display: block;
+      object-fit: contain;
+    }
+
+    .weather-card .clipart {
+      margin: 0 auto 8px;
+    }
+
+    .weather-card h3,
+    .timeline-copy h3 {
+      margin: 0;
+      font-size: 1.08rem;
+    }
+
+    .weather-card p,
+    .timeline-copy p {
+      margin: 4px 0 0;
+      color: var(--muted);
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 94px 1fr;
+      gap: 14px;
+      align-items: center;
+      padding: 14px;
+    }
+
+    .timeline-art {
+      display: grid;
+      place-items: center;
+      min-height: 94px;
+      background: var(--sky);
+      border-radius: 8px;
+    }
+
+    .timeline-item:nth-child(2) .timeline-art {
+      background: var(--mint);
+    }
+
+    .timeline-item:nth-child(3) .timeline-art {
+      background: var(--sun);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 4px;
+      color: #b83257;
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .fine-print {
+      max-width: 650px;
+      margin: 18px auto 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    @media (max-width: 680px) {
+      main {
+        width: min(100% - 22px, 920px);
+        padding-top: 12px;
+      }
+
+      .countdown {
+        padding: 18px 12px;
+      }
+
+      .timer {
+        gap: 7px;
+      }
+
+      .timer__box {
+        padding: 9px 4px;
+      }
+
+      .timer__unit {
+        font-size: 0.72rem;
+      }
+
+      .weather {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-item {
+        grid-template-columns: 78px 1fr;
+        gap: 12px;
+        padding: 12px;
+      }
+
+      .timeline-art {
+        min-height: 78px;
+      }
+
+      .clipart {
+        width: 66px;
+        height: 66px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="celebration" aria-label="Anniversary message">
+      <p class="celebration__text">Happy 4 years</p>
+      <div class="heart" aria-hidden="true">♥</div>
+    </section>
+
+    <section class="countdown" aria-labelledby="countdown-title">
+      <p class="countdown__label" id="countdown-title">Countdown to flight night</p>
+      <div class="timer" aria-live="polite">
+        <div class="timer__box">
+          <span class="timer__number" id="days">--</span>
+          <span class="timer__unit">days</span>
+        </div>
+        <div class="timer__box">
+          <span class="timer__number" id="hours">--</span>
+          <span class="timer__unit">hours</span>
+        </div>
+        <div class="timer__box">
+          <span class="timer__number" id="minutes">--</span>
+          <span class="timer__unit">mins</span>
+        </div>
+        <div class="timer__box">
+          <span class="timer__number" id="seconds">--</span>
+          <span class="timer__unit">secs</span>
+        </div>
+      </div>
+      <p class="countdown__date">Leave home by 6:30 PM on Thursday, July 16</p>
+    </section>
+
+    <section aria-labelledby="weather-title">
+      <h2 class="section-title" id="weather-title">Expected Weather</h2>
+      <div class="weather">
+        <article class="weather-card">
+          <img class="clipart" src="../img/anniversary-weather.svg" alt="">
+          <h3>Friday, July 17</h3>
+          <p>Warm day, mild night</p>
+          <p>Low 80s / mid 60s</p>
+        </article>
+        <article class="weather-card">
+          <img class="clipart" src="../img/anniversary-weather.svg" alt="">
+          <h3>Saturday, July 18</h3>
+          <p>Warm, summery, breezy</p>
+          <p>Low 80s / mid 60s</p>
+        </article>
+        <article class="weather-card">
+          <img class="clipart" src="../img/anniversary-weather.svg" alt="">
+          <h3>Sunday, July 19</h3>
+          <p>Comfortable afternoon travel</p>
+          <p>Upper 70s / mid 60s</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="itinerary-title">
+      <h2 class="section-title" id="itinerary-title">Itinerary</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-art">
+            <img class="clipart" src="../img/anniversary-plane.svg" alt="">
+          </div>
+          <div class="timeline-copy">
+            <span class="eyebrow">July 16</span>
+            <h3>Night flight</h3>
+            <p>Leave home by 6:30 PM. Destination stays a surprise.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-art">
+            <img class="clipart" src="../img/anniversary-lunch.svg" alt="">
+          </div>
+          <div class="timeline-copy">
+            <span class="eyebrow">July 17 + 18</span>
+            <h3>Surprise days</h3>
+            <p>Meals, Exploring, Drinks, Walks, Fun</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-art">
+            <img class="clipart" src="../img/anniversary-home.svg" alt="">
+          </div>
+          <div class="timeline-copy">
+            <span class="eyebrow">July 19</span>
+            <h3>Return home</h3>
+            <p>Afternoon flight back home.</p>
+          </div>
+        </article>
+      </div>
+      <p class="fine-print">Weather is shown as expected seasonal weather for packing, not a destination reveal.</p>
+    </section>
+  </main>
+
+  <script>
+    const target = new Date("2026-07-16T18:30:00-04:00").getTime();
+    const fields = {
+      days: document.getElementById("days"),
+      hours: document.getElementById("hours"),
+      minutes: document.getElementById("minutes"),
+      seconds: document.getElementById("seconds")
+    };
+
+    function pad(value) {
+      return String(value).padStart(2, "0");
+    }
+
+    function updateCountdown() {
+      const remaining = Math.max(0, target - Date.now());
+      const totalSeconds = Math.floor(remaining / 1000);
+      const days = Math.floor(totalSeconds / 86400);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+
+      fields.days.textContent = days;
+      fields.hours.textContent = pad(hours);
+      fields.minutes.textContent = pad(minutes);
+      fields.seconds.textContent = pad(seconds);
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
